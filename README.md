@@ -1,1 +1,2 @@
-FOSS Club GECT
+Foss gect
+
