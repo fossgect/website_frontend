@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter, Route } from 'react-router-dom'
+
 import About from './Components/About'
 import Organizers from './Components/Organizers'
 import Events from './Components/Events'
-
 
 /**
  * This is the component where we have React router
@@ -12,15 +12,11 @@ import Events from './Components/Events'
 
 class App extends Component {
 
-  componentDidMount() {
-
-  }
-
-  render() {
-      
+    render() {
+        
     return (
         <BrowserRouter>
-            <div>
+            <div>                
                 <Route exact path = '/' component = {()=>{return <div>Home</div>}}/>
                 <Route path = '/about' component = {About}/>
                 <Route path = '/organizers' component = {Organizers}/>
@@ -28,7 +24,7 @@ class App extends Component {
             </div>
         </BrowserRouter>
     );
-  }
+    }
 }
 
 export default App;

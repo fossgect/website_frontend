@@ -12,9 +12,7 @@ export default class Organizers extends Component {
     }
 
     render() {
-
-
-
+        
         return (
             <div>Organizers</div>
         );
