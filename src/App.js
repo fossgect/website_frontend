@@ -6,6 +6,10 @@ import Organizers from './Components/Organizers'
 import Events from './Components/Events'
 
 
+/**
+ * This is the component where we have React router
+ */
+
 class App extends Component {
 
   componentDidMount() {
@@ -13,9 +17,7 @@ class App extends Component {
   }
 
   render() {
-
-
-
+      
     return (
         <BrowserRouter>
             <div>
