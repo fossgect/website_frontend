@@ -1,34 +1,32 @@
-import React, { Component, Fragment } from "react";
-import logo from "./logo.svg";
+import React, { Component } from "react";
 import "./App.css";
-import jQuery from "jquery";
-import { multiscroll } from "multiscroll.js"
+import { BrowserRouter, Route } from 'react-router-dom'
+import About from './Components/About'
+import Organizers from './Components/Organizers'
+import Events from './Components/Events'
 
 
 class App extends Component {
 
   componentDidMount() {
-    console.log( jQuery )
-    jQuery('#multiscroll').multiscroll()
+
   }
 
   render() {
 
+
+
     return (
-        <div id="multiscroll">
-        <div className="ms-left">
-            <div className="ms-section">Some section</div>
-            <div className="ms-section">Some section</div>
-            <div className="ms-section">Some section</div>
-        </div>
-        <div className="ms-right">
-            <div className="ms-section">Some section</div>
-            <div className="ms-section">Some section</div>
-            <div className="ms-section">Some section</div>
-        </div>
-    </div>
+        <BrowserRouter>
+            <div>
+                <Route exact path = '/' component = {()=>{return <div>Home</div>}}/>
+                <Route path = '/about' component = {About}/>
+                <Route path = '/organizers' component = {Organizers}/>
+                <Route path = '/events' component = {Events}/>
+            </div>
+        </BrowserRouter>
     );
   }
 }
 
-    export default App;
+export default App;
