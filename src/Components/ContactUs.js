@@ -4,11 +4,11 @@ import React, { Fragment } from "react";
  * This is the page component where we need to include the details about our FOSS club
  */
 
-const About = () => {
+const ContactUs = () => {
     
   return (
     <Fragment>
-      <h1>About</h1>
+      <h1>Contact us</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
         repellat aperiam expedita. Vel, nulla voluptatibus itaque mollitia
@@ -20,15 +20,10 @@ const About = () => {
         Fugit sint cupiditate ducimus, consectetur nisi quo doloremque debitis
         suscipit minima odit accusantium sit quibusdam assumenda excepturi.
         Perferendis quae in ab minima quia adipisci est ea reiciendis amet
-        eaque, delectus aspernatur odio veritatis, qui ipsum optio tenetur non
-        architecto. Fugit sint cupiditate ducimus, consectetur nisi quo doloremque
-        suscipit minima odit accusantium sit quibusdam assumenda excepturi.
-        Perferendis quae in ab minima quia adipisci est ea reiciendis amet
-        eaque, delectus aspernatur odio veritatis, qui ipsum optio tenetur non
-        architecto.
+        eaque, delectus aspernatur odio veritatis, qui ipsum optio tenetur non.
       </p>
     </Fragment>
   );
 };
 
-export default About
+export default ContactUs

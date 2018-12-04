@@ -1,28 +1,14 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: inline;
+.app {
+  
+  height:100vh;
 }
 
-.top {
-  background-color: green;
-  height: 100%;
-  width: 100%;
-  display: flex;
+.app-navbar {
+
+ margin-top: 1.6rem;
 }
 
-.middle {
-  background-color: yellow;
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
+.app-content {
 
-.bottom {
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  display: flex;
+  margin-top: 1.6rem;
 }

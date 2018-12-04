@@ -4,12 +4,14 @@ import React, { Fragment } from "react";
  * This is the page component where we need to include the details about our FOSS club
  */
 
-const About = () => {
-    
+const Home = () => {
   return (
     <Fragment>
-      <h1>About</h1>
+      <h1>Home</h1>
       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+        repellat aperiam expedita. Vel, nulla voluptatibus itaque mollitia
+        facilis exercitationem eos tenetur voluptate, magni molestias numquam.
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
         repellat aperiam expedita. Vel, nulla voluptatibus itaque mollitia
         facilis exercitationem eos tenetur voluptate, magni molestias numquam
@@ -17,18 +19,9 @@ const About = () => {
         porro repellendus illum pariatur itaque! Et in dicta dolores. Dolor
         inventore ducimus esse ratione consectetur sequi placeat, illum
         laudantium aperiam expedita perspiciatis iusto optio eaque ad repellat.
-        Fugit sint cupiditate ducimus, consectetur nisi quo doloremque debitis
-        suscipit minima odit accusantium sit quibusdam assumenda excepturi.
-        Perferendis quae in ab minima quia adipisci est ea reiciendis amet
-        eaque, delectus aspernatur odio veritatis, qui ipsum optio tenetur non
-        architecto. Fugit sint cupiditate ducimus, consectetur nisi quo doloremque
-        suscipit minima odit accusantium sit quibusdam assumenda excepturi.
-        Perferendis quae in ab minima quia adipisci est ea reiciendis amet
-        eaque, delectus aspernatur odio veritatis, qui ipsum optio tenetur non
-        architecto.
       </p>
     </Fragment>
   );
 };
 
-export default About
+export default Home;
