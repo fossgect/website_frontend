@@ -8,6 +8,7 @@ import Events from "./Components/Events";
 import Home from "./Components/Home/Home";
 
 import "semantic-ui-css/semantic.min.css";
+import NavBar from "./Components/Navbar";
 
 /**
  * This is the component where we have React router
@@ -17,10 +18,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <Fragment>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contactus" component={ContactUs} />
-        <Route path="/events" component={Events} />
+        <div>
+          <NavBar/>
+        </div>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contactus" component={ContactUs} />
+          <Route path="/events" component={Events} />
+        </div>
       </Fragment>
     </BrowserRouter>
   );
