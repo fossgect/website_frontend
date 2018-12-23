@@ -4,6 +4,8 @@ import  "./css/fontawesome-all.min.css";
 import "./css/swiper.min.css";
 import "./css/style.css";
 
+import {Link} from 'react-router-dom'
+ 
 /**
  * This is the page component where we need to include the details about our FOSS club
  */
@@ -30,10 +32,10 @@ const NavBar = () => {
                                 </div>
 
                                 <ul>
-                                    <li><a href="#">HOME</a></li>
-                                    <li><a href="#">EVENTS</a></li>
-                                    <li><a href="#">CONTACT</a></li>
-                                    <li><a href="#">ABOUT</a></li>
+                                    <li><Link to = '/'>HOME</Link></li>
+                                    <li><Link to = '/events'>EVENTS</Link></li>
+                                    <li><Link to = '/contactus'>CONTACT</Link></li>
+                                    <li><Link to = '/about'>ABOUT</Link></li>
                                     <li></li>
                                 </ul>
 
