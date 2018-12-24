@@ -4,10 +4,21 @@ import  "./css/fontawesome-all.min.css";
 import "./css/swiper.min.css";
 import "./css/style.css";
 
+import {Link} from 'react-router-dom'
+import * as ReactDOM from "react-dom";
+
 /**
  * This is the page component where we need to include the details about our FOSS club
  */
-class NavBar extends React.Component{
+
+class NavBar extends  React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            isHamburgerVisible : true
+        };
+
+    }
     render() {
         return (
             <header className="site-header">
@@ -22,21 +33,19 @@ class NavBar extends React.Component{
 
                             <div className="col-2 col-lg-8">
                                 <nav className="site-navigation">
-                                    <div className="hamburger-menu d-lg-none">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-
-                                    <ul>
-                                        <li><a href="#">HOME</a></li>
-                                        <li><a href="#">EVENTS</a></li>
-                                        <li><a href="#">CONTACT</a></li>
-                                        <li><a href="#">ABOUT</a></li>
-                                        <li></li>
-                                    </ul>
-
+                                        <div className="hamburger-menu d-lg-none">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <ul ref="nav">
+                                            <li><Link to='/'>HOME</Link></li>
+                                            <li><Link to='/events'>EVENTS</Link></li>
+                                            <li><Link to='/contactus'>CONTACT</Link></li>
+                                            <li><Link to='/about'>ABOUT</Link></li>
+                                            <li></li>
+                                        </ul>
                                 </nav>
 
                             </div>
@@ -50,9 +59,7 @@ class NavBar extends React.Component{
         );
     }
 
-    hamburgerExpand() {
-
-    }
 }
+
 
 export default NavBar;
