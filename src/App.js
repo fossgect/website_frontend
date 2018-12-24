@@ -18,7 +18,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Fragment>
-        <Route exact path="/" component={NavBar} />
+        <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contactus" component={ContactUs} />
         <Route path="/events" component={Events} />
