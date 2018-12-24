@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import "./css/bootstrap.min.css";
-import  "./css/fontawesome-all.min.css";
-import "./css/swiper.min.css";
-import "./css/style.css";
+import "./Home/css/bootstrap.min.css";
+import  "./Home/css/fontawesome-all.min.css";
+import "./Home/css/swiper.min.css";
+import "./Home/css/style.css";
 
 import {Link} from 'react-router-dom'
 import * as ReactDOM from "react-dom";

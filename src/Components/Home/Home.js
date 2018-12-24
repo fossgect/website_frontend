@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
-import NavBar from "./Navbar";
 
 /**
  * This is the page component where we need to include the details about our FOSS club
  */
 
 class Home extends React.Component {
+
   constructor(props) {
+
     super(props);
     this.state = {
       countdown: {
@@ -26,7 +27,6 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
         <div className="hero-content">
           <div className="container">
             <div className="row">
